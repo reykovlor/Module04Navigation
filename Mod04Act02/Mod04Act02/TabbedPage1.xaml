@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Mod04Act02.TabbedPage1"
+            Title="Lorenzo Sangalang">
+
+    <ContentPage Title="Dragonball Characters">
+        <ListView x:Name="CharactersListView">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Goku</x:String>
+                    <x:String>Vegeta</x:String>
+                    <x:String>Gohan</x:String>
+                    <x:String>Broly</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+    </ContentPage>
+
+
+    <ContentPage Title="User Input">
+        <StackLayout>
+            <Entry Placeholder="First Name" />
+            <Entry Placeholder="Last Name" />
+            <Entry Placeholder="Age" Keyboard="Numeric" />
+            <Entry Placeholder="Hobby" />
+ 
+            <Button Text="Submit" />
+        </StackLayout>
+    </ContentPage>
+
+
+    <ContentPage Title="Dragonball Forms">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Text="Dragonball Forms"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Grid.Row="0" />
+
+      
+            <StackLayout Grid.Row="1">
+                <Label Text="Goku's Mastered Ultra Instinct"
+                       FontAttributes="Bold" />
+                <Label Text="The most powerful form attained by Goku in the Dragon Ball series."
+                       LineBreakMode="WordWrap" />
+            </StackLayout>
+
+     
+            <StackLayout Grid.Row="2">
+                <Label Text="Vegeta's Ultra Ego"
+                       FontAttributes="Bold" />
+                <Label Text="An advanced transformation achieved by Vegeta during his training with Beerus."
+                       LineBreakMode="WordWrap" />
+            </StackLayout>
+
+     
+            <StackLayout Grid.Row="3">
+                <Label Text="Gohan's Beast Form"
+                       FontAttributes="Bold" />
+                <Label Text="A unique transformation showcased by Gohan during his battle against Cell Max."
+                       LineBreakMode="WordWrap" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="4">
+                <Label Text="Broly's Legendary Super Saiyan"
+                       FontAttributes="Bold" />
+                <Label Text="A rare and immensely powerful transformation unique to Broly."
+                       LineBreakMode="WordWrap" />
+            </StackLayout>
+        </Grid>
+    </ContentPage>
+</TabbedPage>

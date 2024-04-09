@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mod04Act02.CarouselPage1"
+             Title="Lorenzo Sangalang">
+
+    <ContentPage>
+        <ContentPage.Content>
+            <StackLayout>
+
+                <Image Source="https://www.denofgeek.com/wp-content/uploads/2021/04/Pikachu.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+             
+                <Label Text="Pikachu Is A Thunder Type Pokemon used by Ash Ketchum" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage>
+        <ContentPage.Content>
+            <StackLayout>
+  
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String >Charizard</x:String>
+                            <x:String >Venusaur</x:String>
+                            <x:String >Blastoise</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage>
+        <ContentPage.Content>
+            <StackLayout>
+                <Entry Placeholder="First Name" />
+                <Entry Placeholder="Last Name" />
+                <Entry Placeholder="Age" Keyboard="Numeric" />
+                <Entry Placeholder="Hobby" />
+          
+                <Button Text="Submit" Clicked="SubmitButton_Clicked" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+</CarouselPage>
