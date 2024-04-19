@@ -23,7 +23,7 @@ namespace Mod04Act02
             }
         }
 
-        private async void NavigateBack(object sender, EventArgs e)
+        private async void SubmitButton_Clicked(object sender, EventArgs e)
         {
           
             await Navigation.PopAsync();
